@@ -65,7 +65,7 @@ const HeroSection = () => {
               </div>
 
               {/* Search Button */}
-              <Button variant="hero" size="lg" className="w-full">
+              <Button variant="warm" size="lg" className="w-full">
                 <Search className="h-5 w-5 mr-2" />
                 Find Pilots
               </Button>
@@ -93,9 +93,10 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Floating Elements */}
+      {/* Floating Elements - Updated for warm palette */}
       <div className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full blur-xl animate-float"></div>
       <div className="absolute bottom-20 right-10 w-32 h-32 bg-secondary/20 rounded-full blur-xl animate-float" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute top-1/2 right-20 w-16 h-16 bg-accent/20 rounded-full blur-xl animate-float" style={{ animationDelay: '2s' }}></div>
     </section>
   );
 };
