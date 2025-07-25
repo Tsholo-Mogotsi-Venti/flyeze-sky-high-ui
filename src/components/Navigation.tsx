@@ -30,7 +30,7 @@ const Navigation = () => {
             <a href="#" className="text-foreground hover:text-primary transition-smooth font-medium">
               How it Works
             </a>
-            <a href="#" className="text-foreground hover:text-primary transition-smooth font-medium">
+            <a href="/pilot-setup" className="text-foreground hover:text-primary transition-smooth font-medium">
               Become a Pilot
             </a>
             <a href="/dashboard" className="text-foreground hover:text-primary transition-smooth font-medium">
@@ -79,7 +79,7 @@ const Navigation = () => {
             <a href="#" className="block text-foreground hover:text-primary transition-smooth font-medium py-2">
               How it Works
             </a>
-            <a href="#" className="block text-foreground hover:text-primary transition-smooth font-medium py-2">
+            <a href="/pilot-setup" className="block text-foreground hover:text-primary transition-smooth font-medium py-2">
               Become a Pilot
             </a>
             <a href="/dashboard" className="block text-foreground hover:text-primary transition-smooth font-medium py-2">
