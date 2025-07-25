@@ -86,7 +86,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
             </div>
             <div className="text-xs text-muted-foreground">Starting price</div>
           </div>
-          <Button variant="teal" className="px-6">
+          <Button variant="navy" className="px-6">
             Get Quote
           </Button>
         </div>

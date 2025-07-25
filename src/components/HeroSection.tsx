@@ -65,7 +65,7 @@ const HeroSection = () => {
               </div>
 
               {/* Search Button */}
-              <Button variant="warm" size="lg" className="w-full">
+              <Button variant="professional" size="lg" className="w-full">
                 <Search className="h-5 w-5 mr-2" />
                 Find Pilots
               </Button>

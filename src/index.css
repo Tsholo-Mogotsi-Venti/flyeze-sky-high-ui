@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* FlyEeze Design System - Warm & Modern Color Tokens */
+    /* FlyEeze Design System - Orange + Navy + Charcoal */
     --background: 0 0% 100%;
     --foreground: 210 12% 16%;
 
@@ -18,43 +18,45 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 210 12% 16%;
 
-    /* FlyEeze Brand Colors - Warm & Modern */
-    --primary: 11 92% 69%; /* #FF6B6B - Warm Coral */
+    /* FlyEeze Brand Colors - Professional & Trustworthy */
+    --primary: 24 100% 60%; /* #FF8500 - Vibrant Orange */
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 11 92% 64%;
-    --primary-glow: 11 92% 80%;
+    --primary-hover: 24 100% 55%;
+    --primary-glow: 24 100% 70%;
 
-    --secondary: 188 95% 42%; /* #06B6D4 - Fresh Teal */
+    --secondary: 215 84% 30%; /* #1A365D - Deep Navy */
     --secondary-foreground: 0 0% 100%;
-    --secondary-hover: 188 95% 37%;
+    --secondary-hover: 215 84% 25%;
 
-    --accent: 162 93% 42%; /* #059669 - Sage Green */
+    --accent: 210 14% 35%; /* #4A5568 - Professional Charcoal */
     --accent-foreground: 0 0% 100%;
 
-    --muted: 25 25% 95%; /* Warm neutral */
-    --muted-foreground: 25 5% 45%;
+    --muted: 210 20% 96%; /* Cool neutral */
+    --muted-foreground: 210 8% 45%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 25 15% 90%; /* Warm border */
-    --input: 25 15% 90%;
-    --ring: 11 92% 69%;
+    --border: 210 20% 90%; /* Cool border */
+    --input: 210 20% 90%;
+    --ring: 24 100% 60%;
 
-    /* FlyEeze Warm Dark Theme */
-    --dark: 220 26% 14%; /* #1F2937 - Warm dark */
+    /* FlyEeze Professional Dark Theme */
+    --dark: 215 84% 12%; /* Deep navy dark */
     --dark-foreground: 0 0% 100%;
 
-    /* Advanced Design Tokens - Warm Palette */
+    /* Advanced Design Tokens - Professional Palette */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(var(--background)) 0%, hsl(25 25% 98%) 100%);
-    --gradient-warm: linear-gradient(135deg, hsl(11 92% 69%) 0%, hsl(45 93% 67%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--background)) 0%, hsl(210 20% 98%) 100%);
+    --gradient-professional: linear-gradient(135deg, hsl(24 100% 60%) 0%, hsl(215 84% 30%) 100%);
+    --gradient-subtle: linear-gradient(135deg, hsl(210 20% 98%) 0%, hsl(210 20% 94%) 100%);
     
     --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.3);
     --shadow-card: 0 4px 20px -4px hsl(var(--foreground) / 0.08);
     --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.4);
-    --shadow-warm: 0 8px 25px -8px hsl(11 92% 69% / 0.25);
+    --shadow-professional: 0 8px 25px -8px hsl(215 84% 30% / 0.25);
+    --shadow-orange: 0 6px 20px -6px hsl(24 100% 60% / 0.3);
 
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -73,39 +75,40 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 220 26% 14%; /* Warm dark background */
+    --background: 215 84% 12%; /* Professional navy dark */
     --foreground: 0 0% 100%;
 
-    --card: 220 26% 18%;
+    --card: 215 84% 16%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 220 26% 18%;
+    --popover: 215 84% 16%;
     --popover-foreground: 0 0% 100%;
 
-    --primary: 11 92% 74%; /* Lighter coral for dark mode */
-    --primary-foreground: 220 26% 14%;
-    --primary-hover: 11 92% 69%;
+    --primary: 24 100% 65%; /* Brighter orange for dark mode */
+    --primary-foreground: 215 84% 12%;
+    --primary-hover: 24 100% 60%;
 
-    --secondary: 188 95% 47%; /* Brighter teal for dark mode */
+    --secondary: 215 84% 35%; /* Lighter navy for dark mode */
     --secondary-foreground: 0 0% 100%;
 
-    --accent: 162 93% 47%; /* Brighter sage for dark mode */
+    --accent: 210 14% 45%; /* Lighter charcoal for dark mode */
     --accent-foreground: 0 0% 100%;
 
-    --muted: 220 26% 22%;
-    --muted-foreground: 25 5% 65%;
+    --muted: 215 84% 20%;
+    --muted-foreground: 210 8% 65%;
 
     --destructive: 0 84% 70%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 26% 22%;
-    --input: 220 26% 22%;
-    --ring: 11 92% 74%;
+    --border: 215 84% 20%;
+    --input: 215 84% 20%;
+    --ring: 24 100% 65%;
 
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
-    --gradient-warm: linear-gradient(135deg, hsl(11 92% 74%) 0%, hsl(45 93% 72%) 100%);
+    --gradient-professional: linear-gradient(135deg, hsl(24 100% 65%) 0%, hsl(215 84% 35%) 100%);
     --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.4);
-    --shadow-warm: 0 8px 25px -8px hsl(11 92% 74% / 0.3);
+    --shadow-professional: 0 8px 25px -8px hsl(215 84% 35% / 0.3);
+    --shadow-orange: 0 6px 20px -6px hsl(24 100% 65% / 0.3);
   }
 }
 

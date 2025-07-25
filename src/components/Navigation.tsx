@@ -47,7 +47,7 @@ const Navigation = () => {
               <User className="h-4 w-4 mr-2" />
               Sign In
             </Button>
-            <Button variant="warm" size="lg">
+            <Button variant="orange" size="lg">
               Book Now
             </Button>
           </div>
@@ -84,7 +84,7 @@ const Navigation = () => {
                 <User className="h-4 w-4 mr-2" />
                 Sign In
               </Button>
-              <Button variant="warm" className="w-full">
+              <Button variant="orange" className="w-full">
                 Book Now
               </Button>
             </div>

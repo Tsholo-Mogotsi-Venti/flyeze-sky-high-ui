@@ -101,7 +101,7 @@ const PilotCard: React.FC<PilotCardProps> = ({ pilot }) => {
             <Button variant="outline" size="sm" className="w-full">
               View Profile
             </Button>
-            <Button variant="warm" size="sm" className="w-full">
+            <Button variant="orange" size="sm" className="w-full">
               Book Now
             </Button>
           </div>
