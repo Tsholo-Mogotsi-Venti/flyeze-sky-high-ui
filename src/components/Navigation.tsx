@@ -33,6 +33,9 @@ const Navigation = () => {
             <a href="#" className="text-foreground hover:text-primary transition-smooth font-medium">
               Become a Pilot
             </a>
+            <a href="/dashboard" className="text-foreground hover:text-primary transition-smooth font-medium">
+              Dashboard
+            </a>
           </div>
 
           {/* Desktop Actions */}
@@ -78,6 +81,9 @@ const Navigation = () => {
             </a>
             <a href="#" className="block text-foreground hover:text-primary transition-smooth font-medium py-2">
               Become a Pilot
+            </a>
+            <a href="/dashboard" className="block text-foreground hover:text-primary transition-smooth font-medium py-2">
+              Dashboard
             </a>
             <div className="pt-4 space-y-2">
               <Button variant="outline" className="w-full">
