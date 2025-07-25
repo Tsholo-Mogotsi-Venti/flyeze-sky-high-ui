@@ -201,10 +201,21 @@ const BookingFlow = () => {
                     <span>Time</span>
                     <span>{selectedTime || 'Not selected'}</span>
                   </div>
-                  <div className="border-t border-border pt-3">
+                  <div className="border-t border-border pt-3 space-y-2">
+                    <div className="flex justify-between text-sm">
+                      <span>Base Rate</span>
+                      <span>R1,000</span>
+                    </div>
+                    <div className="flex justify-between text-sm">
+                      <span>Pilot Premium (1.1x)</span>
+                      <span>R100</span>
+                    </div>
                     <div className="flex justify-between font-semibold text-lg">
                       <span>Total</span>
-                      <span className="text-primary">$150</span>
+                      <span className="text-primary">R1,100</span>
+                    </div>
+                    <div className="text-xs text-muted-foreground mt-1">
+                      5-star pilot applies premium for quality service
                     </div>
                   </div>
                 </div>

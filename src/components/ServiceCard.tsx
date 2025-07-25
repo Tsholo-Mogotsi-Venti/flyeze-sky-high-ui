@@ -76,20 +76,30 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
         </ul>
       </div>
 
-      {/* Pricing & Action */}
+      {/* Price Transparency & Action */}
       <div className="px-6 py-4 bg-accent/50 border-t border-border">
-        <div className="flex items-center justify-between">
-          <div>
-            <div className="text-2xl font-bold text-card-foreground">
-              ${service.startingPrice}
-              <span className="text-sm font-normal text-muted-foreground">+</span>
+        {/* Price Transparency Widget */}
+        <div className="mb-4">
+          <div className="flex items-center justify-between mb-2">
+            <span className="text-sm font-medium text-card-foreground">Price Estimate:</span>
+            <div className="text-lg font-bold text-card-foreground">
+              R{Math.round(service.startingPrice * 0.8)} - R{Math.round(service.startingPrice * 1.2)}
             </div>
-            <div className="text-xs text-muted-foreground">Starting price</div>
           </div>
-          <Button variant="navy" className="px-6">
-            Get Quote
-          </Button>
+          <div className="text-xs text-muted-foreground mb-2">
+            Base: R{service.startingPrice} × Pilot adjustment: 0.8x-1.2x
+          </div>
+          <div className="flex items-center space-x-1">
+            <div className="flex-1 bg-border rounded-full h-1.5">
+              <div className="bg-gradient-to-r from-primary to-secondary h-1.5 rounded-full w-2/3" />
+            </div>
+            <span className="text-xs text-muted-foreground">Most pilots charge here</span>
+          </div>
         </div>
+        
+        <Button variant="navy" className="w-full">
+          Get Quote
+        </Button>
       </div>
     </div>
   );

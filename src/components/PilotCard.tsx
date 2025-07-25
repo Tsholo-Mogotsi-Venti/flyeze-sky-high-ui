@@ -85,8 +85,11 @@ const PilotCard: React.FC<PilotCardProps> = ({ pilot }) => {
         <div className="flex items-center justify-between mb-4">
           <div>
             <div className="text-xl font-bold text-card-foreground">
-              ${pilot.hourlyRate}
+              R{pilot.hourlyRate}
               <span className="text-sm font-normal text-muted-foreground">/hr</span>
+            </div>
+            <div className="text-xs text-muted-foreground mt-1">
+              1.1x multiplier • 5-star service
             </div>
           </div>
           <div className="flex items-center space-x-1 text-xs text-muted-foreground">
