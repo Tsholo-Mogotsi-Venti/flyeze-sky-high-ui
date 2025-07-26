@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ServiceAreaMap from '@/components/ServiceAreaMap';
 import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -27,6 +28,7 @@ const PilotSetup = () => {
   const [currentStep, setCurrentStep] = useState(1);
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const [selectedAreas, setSelectedAreas] = useState<string[]>([]);
+  const [serviceArea, setServiceArea] = useState<{ lat: number; lng: number; radius: number; address: string } | null>(null);
   const [licenseUploaded, setLicenseUploaded] = useState(false);
   const [insuranceUploaded, setInsuranceUploaded] = useState(false);
 
@@ -61,9 +63,10 @@ const PilotSetup = () => {
     }
   ];
 
+  // South African service areas for reference (now replaced with map)
   const serviceAreas = [
-    'Manhattan', 'Brooklyn', 'Queens', 'Bronx', 'Staten Island',
-    'Jersey City', 'Hoboken', 'Newark', 'Long Island', 'Westchester'
+    'Johannesburg', 'Cape Town', 'Durban', 'Pretoria', 'Port Elizabeth',
+    'Bloemfontein', 'East London', 'Nelspruit', 'Polokwane', 'Kimberley'
   ];
 
   const weekDays = [
@@ -90,6 +93,10 @@ const PilotSetup = () => {
         ? prev.filter(a => a !== area)
         : [...prev, area]
     );
+  };
+
+  const handleServiceAreaChange = (area: { lat: number; lng: number; radius: number; address: string }) => {
+    setServiceArea(area);
   };
 
   const nextStep = () => {
@@ -285,27 +292,28 @@ const PilotSetup = () => {
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
             <MapPin className="h-5 w-5" />
-            <span>Service Areas</span>
+            <span>Service Area</span>
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-muted-foreground mb-4">Select the areas where you're willing to provide services</p>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            {serviceAreas.map((area) => (
-              <div 
-                key={area}
-                className={`flex items-center space-x-2 p-3 border rounded-lg cursor-pointer transition-all ${
-                  selectedAreas.includes(area) 
-                    ? 'border-primary bg-primary/5' 
-                    : 'border-border hover:border-primary/50'
-                }`}
-                onClick={() => handleAreaToggle(area)}
-              >
-                <Checkbox checked={selectedAreas.includes(area)} />
-                <span className="text-sm">{area}</span>
-              </div>
-            ))}
-          </div>
+          <p className="text-muted-foreground mb-4">
+            Set your service center location and define your coverage radius
+          </p>
+          <ServiceAreaMap 
+            onServiceAreaChange={handleServiceAreaChange}
+            initialLocation={serviceArea || undefined}
+          />
+          {serviceArea && (
+            <div className="mt-4 p-3 bg-muted/20 rounded-lg">
+              <p className="text-sm font-medium">Service Area Summary:</p>
+              <p className="text-sm text-muted-foreground">
+                Center: {serviceArea.address}
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Radius: {serviceArea.radius} km
+              </p>
+            </div>
+          )}
         </CardContent>
       </Card>
     </div>
