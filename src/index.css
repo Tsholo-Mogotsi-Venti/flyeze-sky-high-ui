@@ -18,11 +18,11 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 210 12% 16%;
 
-    /* FlyEeze Brand Colors - Professional & Trustworthy */
-    --primary: 24 100% 60%; /* #FF8500 - Vibrant Orange */
+    /* FlyEeze Brand Colors - Matching Logo Orange */
+    --primary: 18 100% 62%; /* #FF7A00 - Logo Orange */
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 24 100% 55%;
-    --primary-glow: 24 100% 70%;
+    --primary-hover: 18 100% 57%;
+    --primary-glow: 18 100% 72%;
 
     --secondary: 215 84% 30%; /* #1A365D - Deep Navy */
     --secondary-foreground: 0 0% 100%;
@@ -49,7 +49,7 @@ All colors MUST be HSL.
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
     --gradient-card: linear-gradient(145deg, hsl(var(--background)) 0%, hsl(210 20% 98%) 100%);
-    --gradient-professional: linear-gradient(135deg, hsl(24 100% 60%) 0%, hsl(215 84% 30%) 100%);
+    --gradient-professional: linear-gradient(135deg, hsl(18 100% 62%) 0%, hsl(215 84% 30%) 100%);
     --gradient-subtle: linear-gradient(135deg, hsl(210 20% 98%) 0%, hsl(210 20% 94%) 100%);
     
     --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.3);
@@ -84,9 +84,9 @@ All colors MUST be HSL.
     --popover: 215 84% 16%;
     --popover-foreground: 0 0% 100%;
 
-    --primary: 24 100% 65%; /* Brighter orange for dark mode */
+    --primary: 18 100% 67%; /* Brighter logo orange for dark mode */
     --primary-foreground: 215 84% 12%;
-    --primary-hover: 24 100% 60%;
+    --primary-hover: 18 100% 62%;
 
     --secondary: 215 84% 35%; /* Lighter navy for dark mode */
     --secondary-foreground: 0 0% 100%;
@@ -105,7 +105,7 @@ All colors MUST be HSL.
     --ring: 24 100% 65%;
 
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
-    --gradient-professional: linear-gradient(135deg, hsl(24 100% 65%) 0%, hsl(215 84% 35%) 100%);
+    --gradient-professional: linear-gradient(135deg, hsl(18 100% 67%) 0%, hsl(215 84% 35%) 100%);
     --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.4);
     --shadow-professional: 0 8px 25px -8px hsl(215 84% 35% / 0.3);
     --shadow-orange: 0 6px 20px -6px hsl(24 100% 65% / 0.3);

@@ -10,13 +10,12 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="bg-gradient-hero p-2 rounded-lg shadow-elegant">
-              <Plane className="h-6 w-6 text-white" />
-            </div>
-            <span className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent">
-              FlyEeze
-            </span>
+          <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/b1648288-9f3d-4863-8cd4-9222c0081a71.png" 
+              alt="FlyEeze Logo"
+              className="h-8 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
