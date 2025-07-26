@@ -253,7 +253,7 @@ const PilotSetup = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold">{service.name}</h3>
-                      <p className="text-sm text-muted-foreground">Base: ${service.baseRate}/hr</p>
+                      <p className="text-sm text-muted-foreground">Base: R{service.baseRate}/hr</p>
                     </div>
                   </div>
                   <Checkbox checked={isSelected} />
@@ -264,12 +264,12 @@ const PilotSetup = () => {
                   <div className="space-y-3 border-t pt-4">
                     <div className="flex items-center space-x-2">
                       <DollarSign className="h-4 w-4 text-muted-foreground" />
-                      <Label htmlFor={`rate-${service.id}`} className="text-sm">Your hourly rate</Label>
+                      <Label htmlFor={`rate-${service.id}`} className="text-sm">Your hourly rate (ZAR)</Label>
                     </div>
                     <Input 
                       id={`rate-${service.id}`}
                       type="number" 
-                      placeholder={service.baseRate.toString()}
+                      placeholder={`R${service.baseRate}`}
                       className="w-full"
                     />
                   </div>
