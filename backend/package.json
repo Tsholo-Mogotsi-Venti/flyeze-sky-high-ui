@@ -1,0 +1,12 @@
+{
+  "name": "@flyeze/backend",
+  "private": true,
+  "type": "commonjs",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit || true"
+  }
+}
